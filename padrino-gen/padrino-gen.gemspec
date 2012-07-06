@@ -15,8 +15,7 @@ Gem::Specification.new do |s|
   s.version = Padrino.version
   s.date = Time.now.strftime("%Y-%m-%d")
 
-  s.extra_rdoc_files = Dir["*.rdoc"]
-  s.files         = Dir["**/*"]
+  s.files         = Dir[File.expand_path(File.join(__FILE__, "../**/*"))]
   s.require_paths = ["lib"]
   s.rdoc_options  = ["--charset=UTF-8"]
 
